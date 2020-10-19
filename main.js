@@ -51,7 +51,7 @@ client.on('message', (message)=>{
         let args = message.content.split(" ").slice(1);
         let author = message.member;
          if(!message.member.roles.cache.has("761448574709792778"))
-         return
+         return;
         let role = message.guild.roles.cache.find(roles => 'name', "Gamer Mods");
             if(!args[0]){
                 message.delete();
